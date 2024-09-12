@@ -1,0 +1,19 @@
+.container {
+    text-align: left;
+    .imgLink {
+        margin-left: 4px;
+        width: 14px;
+        height: 14px;
+        &.dark {
+            g {
+                fill: white;
+            }
+        }
+
+        &.light {
+            g {
+                fill: 0f0f0f;
+            }
+        }
+    }
+}

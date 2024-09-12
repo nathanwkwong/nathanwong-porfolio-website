@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    text-align: left;
+    margin-bottom: 2rem;
+    flex: 1;
+
+    :last-child {
+        margin-bottom: 0;
+    }
+
+    .date {
+        p {
+            width: 110px;
+        }
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        .descList {
+            :not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
+        .technologies {
+            display: flex;
+            color: rgb(255, 255, 255);
+            opacity: 0.5;
+
+            li {
+                width: 100%;
+            }
+        }
+    }
+}

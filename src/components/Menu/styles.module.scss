@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 16px 0;
+    background-color: #242424;
+    z-index: 10;
+
+    &.container--theme-light {
+        background-color: #f3ebf6;
+    }
+}
+
+.list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    li {
+        list-style: none;
+        margin-right: 20px;
+
+        &:hover {
+            background-color: rgb(0, 0, 0, 0.1);
+        }
+    }
+
+    .imgDarkMode {
+        width: 20px;
+        height: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

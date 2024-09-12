@@ -1,0 +1,13 @@
+.container {
+    gap: 1em;
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    a {
+        line-height: 1.6;
+    }
+}

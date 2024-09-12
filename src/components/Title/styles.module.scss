@@ -1,0 +1,11 @@
+.container {
+    text-align: left;
+
+    &.container--md {
+        margin-bottom: 24px;
+    }
+
+    &.container--sm {
+        margin-bottom: 14px;
+    }
+}

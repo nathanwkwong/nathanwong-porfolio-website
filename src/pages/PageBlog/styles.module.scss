@@ -1,0 +1,8 @@
+.container {
+    text-align: left;
+
+    & > h1,
+    & > div {
+        margin-top: 36px;
+    }
+}
