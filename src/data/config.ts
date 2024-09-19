@@ -52,15 +52,9 @@ export const config = {
     ],
     blogs: [
         {
-            title: 'Implement Forgot/Reset Password Flow with Nest.js',
+            title: 'Implement Forgot/Reset Password Flow with Nest.js',
             date: 'Step 13, 2024',
-            url: 'https://dev.to/nathanwong/implement-forgot-reset-password-flow-with-nest-js-3f0d',
-            type: 'Coding'
-        },
-        {
-            title: 'Sending E-mail via nodemailer in Nest.js with Google OAuth2',
-            date: 'Step 13, 2024',
-            url: 'https://dev.to/nathanwong/implement-forgot-reset-password-flow-with-nest-js-3f0d',
+            url: 'https://medium.com/@wkwong.nathan/implement-forgot-reset-password-flow-with-nest-js-2bce846b0495',
             type: 'Coding'
         }
     ]

@@ -11,7 +11,9 @@ interface BlogPostProps {
 export const BlogPost = ({ title, date, url, type }: BlogPostProps) => {
     return (
         <div className={css.container}>
-            <Link href={url}>{title}</Link>
+            <Link href={url} target="_blank">
+                {title}
+            </Link>
             <p>
                 <span>{date}</span> • <span>{type}</span>
             </p>
