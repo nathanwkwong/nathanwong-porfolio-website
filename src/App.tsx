@@ -6,6 +6,7 @@ import { useContext } from 'react';
 import { ThemeContext } from './context/ThemeContext';
 import css from './styles.module.scss';
 import { Footer } from './components/Footer';
+import { PageProject } from './pages/PageProject';
 
 const router = createBrowserRouter([
     {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     {
         path: '/blog',
         element: <PageBlog />
+    },
+    {
+        path: '/projects',
+        element: <PageProject />
     },
     {
         path: '*',

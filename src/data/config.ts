@@ -57,5 +57,14 @@ export const config = {
             url: 'https://medium.com/@wkwong.nathan/implement-forgot-reset-password-flow-with-nest-js-2bce846b0495',
             type: 'Coding'
         }
+    ],
+    projects: [
+        {
+            title: 'Crypto Exchange Order Book',
+            url: 'https://react-websocket-orderbook.vercel.app/',
+            description:
+                'A simple UI display for a order book for a crypto pair using React.js and websocket.',
+            technologies: ['React', 'TypeScript', 'Websocket']
+        }
     ]
 };

@@ -18,9 +18,9 @@ export const Menu = () => {
                 <li>
                     <a href="/blog">Blog</a>
                 </li>
-                {/* <li>
+                <li>
                     <a href="/projects">Projects</a>
-                </li> */}
+                </li>
                 <img
                     src={theme === 'theme-dark' ? LightModeSvg : DarkModeSvg}
                     className={clsx([css.imgDarkMode, theme])}

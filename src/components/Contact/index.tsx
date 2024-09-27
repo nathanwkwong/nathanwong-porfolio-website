@@ -1,4 +1,4 @@
-import { Link } from '../Link/Link';
+import { Link } from '../Link';
 import { Title } from '../Title';
 import css from './styles.module.scss';
 

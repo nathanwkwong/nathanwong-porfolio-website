@@ -2,17 +2,14 @@ import { Title } from '../Title';
 
 import { config } from '../../data/config';
 import css from './styles.module.scss';
-import { useContext } from 'react';
-import { ThemeContext } from '../../context/ThemeContext';
-import { Link } from '../Link/Link';
+import { Link } from '../Link';
+import { ListTechnology } from '../ListTechnology';
 
 interface ExperienceProps {
     title: string;
 }
 
 export const Experience = ({ title }: ExperienceProps) => {
-    const { theme } = useContext(ThemeContext);
-
     return (
         <div>
             <Title title={title} />
@@ -32,16 +29,7 @@ export const Experience = ({ title }: ExperienceProps) => {
                                         return <p>{desc}</p>;
                                     })}
                                 </div>
-                                <p className={css.technologies} id={theme}>
-                                    {technologies.map((tech, index) => (
-                                        <span>
-                                            {tech}
-                                            {index !== technologies.length - 1
-                                                ? ` •`
-                                                : ''}
-                                        </span>
-                                    ))}
-                                </p>
+                                <ListTechnology technologies={technologies} />
                             </div>
                         </div>
                     );
