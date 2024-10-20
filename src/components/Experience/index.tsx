@@ -2,7 +2,7 @@ import { Title } from '../Title';
 
 import { config } from '../../data/config';
 import css from './styles.module.scss';
-import { Link } from '../Link';
+import { OuterLink } from '../Link';
 import { ListTechnology } from '../ListTechnology';
 
 interface ExperienceProps {
@@ -21,9 +21,9 @@ export const Experience = ({ title }: ExperienceProps) => {
                                 <p>{date}</p>
                             </div>
                             <div className={css.details}>
-                                <Link href={url} className={css.title}>
+                                <OuterLink href={url} className={css.title}>
                                     {title} - {company}
-                                </Link>
+                                </OuterLink>
                                 <div className={css.descList}>
                                     {descriptions.map((desc) => {
                                         return <p>{desc}</p>;

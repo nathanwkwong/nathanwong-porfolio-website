@@ -1,4 +1,4 @@
-import { Link } from '../Link';
+import { OuterLink } from '../Link';
 import { Title } from '../Title';
 import css from './styles.module.scss';
 
@@ -30,7 +30,7 @@ export const Contact = () => {
                         <div className={css.type}>
                             <p>{type}</p>
                         </div>
-                        <Link href={url}>{name}</Link>
+                        <OuterLink href={url}>{name}</OuterLink>
                     </div>
                 );
             })}

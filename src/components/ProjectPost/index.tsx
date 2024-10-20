@@ -1,4 +1,4 @@
-import { Link } from '../Link';
+import { OuterLink } from '../Link';
 import { ListTechnology } from '../ListTechnology';
 import css from './styles.module.scss';
 
@@ -17,9 +17,9 @@ export const ProjectPost = ({
 }: ProjectPostProps) => {
     return (
         <div className={css.container}>
-            <Link href={url} target="_blank">
+            <OuterLink href={url} target="_blank">
                 {title}
-            </Link>
+            </OuterLink>
             <p>
                 <span>{description}</span>
             </p>

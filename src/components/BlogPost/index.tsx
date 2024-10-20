@@ -1,4 +1,4 @@
-import { Link } from '../Link';
+import { OuterLink } from '../Link';
 import css from './styles.module.scss';
 
 interface BlogPostProps {
@@ -11,9 +11,9 @@ interface BlogPostProps {
 export const BlogPost = ({ title, date, url, type }: BlogPostProps) => {
     return (
         <div className={css.container}>
-            <Link href={url} target="_blank">
+            <OuterLink href={url} target="_blank">
                 {title}
-            </Link>
+            </OuterLink>
             <p>
                 <span>{date}</span> • <span>{type}</span>
             </p>
