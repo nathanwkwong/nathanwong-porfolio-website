@@ -1,7 +1,7 @@
 export const config = {
     main: {
         name: 'Nathan Wong',
-        role: 'Software Engineer'
+        role: 'Frontend Developer'
     },
     // education: [],
     workExperience: [
@@ -60,10 +60,17 @@ export const config = {
     ],
     projects: [
         {
-            title: 'Crypto Exchange Order Book',
-            url: 'https://react-websocket-orderbook.vercel.app/',
+            title: 'Game Wordle for 2 players',
+            url: 'https://github.com/nathanwkwong/react-websocket-wordle',
             description:
-                'A simple UI display for a order book for a crypto pair using React.js and websocket.',
+                'Wordle that can play with others built from Typescript, React.js, SCSS, Node.js and Websocket.',
+            technologies: ['React', 'TypeScript', 'Websocket']
+        },
+        {
+            title: 'Crypto Exchange Order Book',
+            url: 'https://react-websocket-orderbook.vercel.app',
+            description:
+                'A simple UI display for a order book for a crypto pair using React.js and Websocket.',
             technologies: ['React', 'TypeScript', 'Websocket']
         }
     ]

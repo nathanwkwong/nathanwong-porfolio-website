@@ -15,7 +15,6 @@ export const PageHome = () => {
             <Hero />
             <About />
             <Experience title="Work Experience" />
-            {/* <Experience title="Education" /> */}
             <Contact />
         </div>
     );

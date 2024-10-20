@@ -12,7 +12,7 @@ export const Hero = () => {
             />
             <div className={css.details}>
                 <h1>{config.main.name}</h1>
-                <p>{config.main.role}</p>
+                <p className={css.role}>{config.main.role}</p>
             </div>
         </div>
     );
