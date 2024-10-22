@@ -14,7 +14,7 @@ export const PageHome = () => {
         <div className={css.container} id={theme}>
             <Hero />
             <About />
-            <Experience title="Work Experience" />
+            <Experience title="Professional Experience" />
             <Contact />
         </div>
     );

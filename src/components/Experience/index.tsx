@@ -21,9 +21,17 @@ export const Experience = ({ title }: ExperienceProps) => {
                                 <p>{date}</p>
                             </div>
                             <div className={css.details}>
-                                <OuterLink href={url} className={css.title}>
-                                    {title} - {company}
-                                </OuterLink>
+                                {url ? (
+                                    <OuterLink href={url} className={css.title}>
+                                        {title} - {company}
+                                    </OuterLink>
+                                ) : (
+                                    <span className={css.title}>
+                                        {' '}
+                                        {title} - {company}
+                                    </span>
+                                )}
+
                                 <div className={css.descList}>
                                     {descriptions.map((desc) => {
                                         return <p>{desc}</p>;

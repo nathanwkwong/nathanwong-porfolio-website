@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 4px;
 
     .details {
         display: flex;
@@ -12,9 +12,6 @@
     .title {
         display: flex;
         align-items: center;
-    }
-
-    a {
-        line-height: 1.6;
+        margin-bottom: 4px;
     }
 }

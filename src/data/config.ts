@@ -8,7 +8,6 @@ export const config = {
         {
             company: 'Markato',
             url: 'https://www.markato.com/',
-            // logo: 'https://www.company.com/logo.png',
             title: 'Software Engineer',
             date: '2023 - 2024',
             descriptions: [
@@ -27,8 +26,6 @@ export const config = {
         },
         {
             company: 'Speedy Linkage',
-            url: 'https://www.acmarketscn.com',
-            // logo: 'https://www.company.com/logo.png',
             title: 'Front-end Developer II',
             date: '2021 - 2023',
             descriptions: [
@@ -40,7 +37,6 @@ export const config = {
         {
             company: 'Virtual Gaming Technology',
             url: 'https://www.vgt.com.hk',
-            // logo: 'https://www.company.com/logo.png',
             title: 'Front-end Developer',
             date: '2020 - 2021',
             descriptions: [
@@ -54,6 +50,8 @@ export const config = {
         {
             title: 'Implement Forgot/Reset Password Flow with Nest.js',
             date: 'Step 13, 2024',
+            description:
+                'Explained how to implement a secure forgot/reset password feature with Nest.js.',
             url: 'https://medium.com/@wkwong.nathan/implement-forgot-reset-password-flow-with-nest-js-2bce846b0495',
             type: 'Coding'
         }

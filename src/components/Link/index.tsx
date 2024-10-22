@@ -8,10 +8,10 @@ import { Link as ReactRouterLink } from 'react-router-dom';
 
 type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
-export const OuterLink = (linkProps: LinkProps) => {
+export const OuterLink = ({ className, ...linkProps }: LinkProps) => {
     const { theme } = useContext(ThemeContext);
     return (
-        <div className={css.container}>
+        <div className={clsx([className, css.container])}>
             <ReactRouterLink {...linkProps} to={linkProps.href!} />
             <ImgLink
                 className={clsx([

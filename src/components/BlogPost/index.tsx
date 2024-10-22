@@ -6,15 +6,26 @@ interface BlogPostProps {
     date: string;
     url: string;
     type: string;
+    description: string;
 }
 
-export const BlogPost = ({ title, date, url, type }: BlogPostProps) => {
+export const BlogPost = ({
+    title,
+    date,
+    url,
+    type,
+    description
+}: BlogPostProps) => {
     return (
         <div className={css.container}>
-            <OuterLink href={url} target="_blank">
-                {title}
-            </OuterLink>
-            <p>
+            <div className={css.title}>
+                ．
+                <OuterLink href={url} target="_blank">
+                    {title}
+                </OuterLink>
+            </div>
+            <p className={css.description}>{description}</p>
+            <p className={css.date}>
                 <span>{date}</span> • <span>{type}</span>
             </p>
         </div>

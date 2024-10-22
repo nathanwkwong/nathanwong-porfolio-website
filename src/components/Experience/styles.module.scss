@@ -17,9 +17,14 @@
     .details {
         display: flex;
         flex-direction: column;
-        gap: 14px;
+
+        .title {
+            margin-bottom: 14px;
+        }
 
         .descList {
+            margin-bottom: 6px;
+
             :not(:last-child) {
                 margin-bottom: 10px;
             }

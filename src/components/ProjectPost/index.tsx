@@ -20,6 +20,7 @@ export const ProjectPost = ({
     return (
         <div className={css.container}>
             <div className={css.title}>
+                ．
                 <OuterLink href={url} target="_blank">
                     {isOnGoing && (
                         <span className={css.onGoing}>{`(Developing) `}</span>
@@ -27,10 +28,7 @@ export const ProjectPost = ({
                     {title}
                 </OuterLink>
             </div>
-
-            <p>
-                <span>{description}</span>
-            </p>
+            <p className={css.description}>{description}</p>
             <ListTechnology technologies={technologies} />
         </div>
     );
