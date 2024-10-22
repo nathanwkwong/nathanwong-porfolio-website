@@ -60,7 +60,7 @@ export const config = {
     ],
     projects: [
         {
-            title: 'Backend App for Bank transactions',
+            title: 'Backend App for Banking Transactions',
             url: 'https://github.com/nathanwkwong/node-ts-banking',
             description:
                 'A back application which can perform traditional bank transactions with ledger and security measurements.',
