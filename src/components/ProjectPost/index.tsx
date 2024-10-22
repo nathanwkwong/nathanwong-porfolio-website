@@ -7,19 +7,27 @@ interface ProjectPostProps {
     description: string;
     url: string;
     technologies: string[];
+    isOnGoing?: boolean;
 }
 
 export const ProjectPost = ({
     title,
     description,
     url,
-    technologies
+    technologies,
+    isOnGoing
 }: ProjectPostProps) => {
     return (
         <div className={css.container}>
-            <OuterLink href={url} target="_blank">
-                {title}
-            </OuterLink>
+            <div className={css.title}>
+                <OuterLink href={url} target="_blank">
+                    {isOnGoing && (
+                        <span className={css.onGoing}>{`(Developing) `}</span>
+                    )}
+                    {title}
+                </OuterLink>
+            </div>
+
             <p>
                 <span>{description}</span>
             </p>

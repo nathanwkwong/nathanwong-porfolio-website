@@ -12,7 +12,7 @@ export const ListTechnology = ({ technologies }: ListTechnologyProps) => {
     return (
         <p className={css.technologies} id={theme}>
             {technologies.map((tech, index) => (
-                <span>
+                <span key={index}>
                     {tech}
                     {index !== technologies.length - 1 ? ` •` : ''}
                 </span>

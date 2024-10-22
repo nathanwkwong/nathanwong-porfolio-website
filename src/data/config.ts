@@ -60,6 +60,14 @@ export const config = {
     ],
     projects: [
         {
+            title: 'Backend App for Bank transactions',
+            url: 'https://github.com/nathanwkwong/node-ts-banking',
+            description:
+                'A back application which can perform traditional bank transactions with ledger and security measurements.',
+            technologies: ['Typescript', 'Node.js', 'TypeORM'],
+            isOnGoing: true
+        },
+        {
             title: 'Game Wordle for 2 players',
             url: 'https://github.com/nathanwkwong/react-websocket-wordle',
             description:
